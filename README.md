@@ -1,4 +1,11 @@
 # Insurance Premium Prediction API 🚀
+
+## 🌐 Live API
+https://insurance-premium-predict.onrender.com
+
+## 📘 Swagger Docs
+https://insurance-premium-predict.onrender.com/docs
+
 **FastAPI + Machine Learning | Real-Time Premium Prediction**
 
 A Machine Learning project that predicts **insurance premium** based on user inputs.  
