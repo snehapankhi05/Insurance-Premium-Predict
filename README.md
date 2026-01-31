@@ -1,75 +1,93 @@
-# Insurance Premium Prediction API 🚀
+# Insurance Prediction System 🏥📊
 
-## 🌐 Live API
-https://insurance-premium-predict.onrender.com
-
-## 📘 Swagger Docs
-https://insurance-premium-predict.onrender.com/docs
-
-**FastAPI + Machine Learning | Real-Time Premium Prediction**
-
-A Machine Learning project that predicts **insurance premium** based on user inputs.  
-Built using **FastAPI** to serve the ML model as a REST API.
+An end-to-end Machine Learning project that predicts insurance-related outcomes using structured user inputs.  
+The project focuses on clean code organization, model inference, and practical ML workflow rather than just raw accuracy.
 
 ---
 
-## ✨ Features
-- ✅ FastAPI-based REST API
-- ✅ Real-time insurance premium prediction
-- ✅ Clean project structure (config, schema, model)
-- ✅ Model saved using `pickle`
-- ✅ Input validation using Pydantic
+## 🚀 Project Overview
+
+This project uses a trained Machine Learning model to make insurance predictions based on user-provided inputs such as demographic and location-related features.
+
+### Key focus areas:
+- Clean ML pipeline
+- Model loading and inference
+- Input and output schema handling
+- Production-style project structure
 
 ---
 
-## 🛠 Tech Stack
-- **Python**
-- **FastAPI**
-- **Scikit-learn**
-- **Pydantic**
-- **Uvicorn**
+## 🧠 Machine Learning Approach
+
+- **Problem Type:** Supervised learning (Regression)
+- **Model:** Pre-trained ML model (`model.pkl`)
+- **Data Processing:** Completed during the training phase
+- **Inference:** Handled via a separate prediction module
+- **Validation:** Train/Test split with standard regression metrics
+
+### 📊 Evaluation Metrics
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- R² Score
+
+These metrics were used to evaluate generalization performance on unseen data.
 
 ---
 
-## 📂 Project Structure
-```txt
-Insurance-Premium-Predict/
-│── config/
-│── model/
-│── schema/
-│── .gitignore
-│── README.md
+## 🗂️ Project Structure
 
-
+insurance-prediction/
+│
+├── config/
+│ └── city_tier.py # City classification logic
+│
+├── model/
+│ ├── model.pkl # Trained ML model
+│ └── predict.py # Prediction logic
+│
+├── schema/
+│ ├── user_input.py # Input schema definition
+│ └── prediction_response.py # Output schema definition
+│
+├── app.py # Main application file
+├── requirements.txt
+├── README.md
+├── .gitignore
 
 ---
 
-## ⚙️ Setup & Run Locally
+## ▶️ How to Run the Project
 
-### 1️⃣ Clone the repository
+### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/snehapankhi05/Insurance-Premium-Predict.git
-cd Insurance-Premium-Predict
+git clone https://github.com/your-username/insurance-prediction.git
+cd insurance-prediction
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+3️⃣ Run the Application
+python app.py
+Ensure Python 3.8 or higher is installed.
 
-2️⃣ Create virtual environment
-python -m venv myenv
-myenv\Scripts\activate
+🧩 Key Learnings
+Structuring an ML project for real-world usage
 
-3️⃣ Install dependencies
-pip install -r model/requirements.txt
+Separating configuration, schema, and model logic
 
-4️⃣ Run the FastAPI server
-uvicorn schema.app:app --reload
+Loading and using trained models safely
 
-🔥 API Documentation (Swagger UI)
+Writing readable and maintainable ML code
 
-Open:
+📌 Notes
+This project is intended for learning and demonstration purposes.
 
-http://127.0.0.1:8000/docs
+Model performance depends on the quality and distribution of the training data.
+
+Future improvements may include advanced models and better feature engineering.
 
 👩‍💻 Author
+Khush
+B.E. Computer Science Engineering (AI & ML)
+India
 
-Sneha Pankhi
-GitHub: https://github.com/snehapankhi05
 
-⭐ If you like this project, don’t forget to star the repository!
+---
